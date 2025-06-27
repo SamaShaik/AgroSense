@@ -1,0 +1,48 @@
+# 💻 Python
+__pycache__/
+*.py[cod]
+*.so
+
+# 🧪 Virtual Environments
+venv/
+ENV/
+env/
+.venv/
+
+# 📦 Package distributions
+*.egg
+*.egg-info/
+dist/
+build/
+
+# 🧠 Machine Learning models
+models/*.h5
+models/*.pkl
+*.h5
+*.pkl
+
+# 📊 Datasets
+datasets/
+data/
+*.csv
+*.xlsx
+*.zip
+
+# 🔍 Checkpoints and logs
+**/.ipynb_checkpoints/
+*.log
+
+# 📸 Uploads or user images
+uploads/
+media/
+
+# 🐘 OS/System files
+.DS_Store
+Thumbs.db
+
+# 🌐 IDE/Editor settings
+.vscode/
+.idea/
+
+# 📄 Environment variables
+.env
