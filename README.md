@@ -1,32 +1,64 @@
-# ML Web App
+# 🌱 AgroSense
 
-A simple machine learning web application built with **Flask** and **HTML/JavaScript**.  
-Users can input data through a web form, and the ML model makes predictions in real-time.
+A **machine learning-based web application** that recommends the most suitable crop for cultivation based on soil nutrients and environmental conditions. This system helps farmers and agricultural experts make data-driven decisions to improve productivity.
 
-## ✨ Features
+---
 
-- Train and save ML models (e.g., scikit-learn).  
-- Load the saved model in Flask backend.  
-- Predict outputs via a simple web form.  
-- Display results instantly on the webpage.  
-- Clean and minimal frontend using HTML, CSS, and JS.  
+##  Dataset
 
-## 🛠 Technologies Used
+This project utilizes the **Crop Recommendation Dataset** available on Kaggle, curated by Varshita Nalluri:
 
-- **Backend:** Flask (Python)  
-- **Frontend:** HTML, CSS, JavaScript  
-- **ML Libraries:** Scikit-learn, Joblib  
-- **Other:** JSON API for communication  
+- **Dataset Name**: Crop Recommendation Dataset  
+- **Source**: Kaggle  
+- **URL**: https://www.kaggle.com/datasets/varshitanalluri/crop-recommendation-dataset  
+- **Description**: The dataset contains records of seven key environmental and soil features—Nitrogen (N), Phosphorus (P), Potassium (K), Temperature, Humidity, pH Value, and Rainfall—paired with the most suitable crop for given conditions :contentReference[oaicite:0]{index=0}.
 
-## 📋 Prerequisites
+---
 
-Before running the project, make sure you have installed:
+##  How it Works
 
-- Python (3.7 or higher recommended)  
-- pip (Python package manager)  
-- A modern browser (Chrome, Firefox, Edge, etc.)  
+1. **Data Loading & Exploration**  
+   - Loaded the dataset from CSV.  
+   - Explored data characteristics via `head`, `shape`, `info`, checks for missing or duplicate values, basic statistics, and a correlation heatmap.
 
-Install required Python libraries:
+2. **Preprocessing & Feature Engineering**  
+   - Mapped crop names to numeric labels.  
+   - Split data into features (`X`) and target (`y`), followed by an 80/20 train-test split.  
+   - Scaled numeric features using **MinMaxScaler**.
+
+3. **Model Training & Evaluation**  
+   - Trained a range of classification algorithms: Logistic Regression, Gaussian Naive Bayes, SVM, K-Nearest Neighbors, Decision Tree, Extra Tree, Random Forest, Bagging, Gradient Boosting, and AdaBoost.  
+   - Evaluated accuracy scores on the test set and selected **Random Forest Classifier** as the best-performing model.
+
+4. **Model Serialization**  
+   - Persisted the trained model and scaler using **pickle** to `model.pkl` and `minmaxscaler.pkl`.
+
+5. **Web Application with Flask**  
+   - Built a simple Flask app to accept form inputs for soil and environmental parameters, preprocess them, run the model, and render crop recommendations in real time.
+
+---
+
+##  Technologies Used
+
+- **Python**  
+- **Data Handling & Visualization**: pandas, NumPy, seaborn, matplotlib  
+- **Machine Learning**: scikit-learn (Random Forest, MinMaxScaler)  
+- **Web Framework**: Flask  
+- **Frontend**: HTML (e.g., `index.html` for user input and results display)
+
+---
+
+##  Features
+
+- Input soil nutrients and environmental parameters.  
+- Receive an **instant crop recommendation**.  
+- Easy-to-use interface ideal for farmers and agriculture experts.  
+- Scalable for integration with IoT devices or mobile applications.
+
+---
+
+##  How to Run
 
 ```bash
-pip install flask joblib scikit-learn
+git clone <your-repo-link>
+cd <your-repo-folder>
