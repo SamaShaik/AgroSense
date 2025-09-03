@@ -1,4 +1,4 @@
-# 🌱 Crop Recommendation System
+# 🌱AgroSense - Crop Recommendation System
 
 A **machine learning-based web application** that recommends the most suitable crop for cultivation based on soil nutrients and environmental conditions. This system helps farmers and agricultural experts make data-driven decisions to improve productivity.
 
