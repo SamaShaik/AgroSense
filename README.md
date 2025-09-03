@@ -1,4 +1,4 @@
-# 🤖 ML Web App
+# ML Web App
 
 A simple machine learning web application built with **Flask** and **HTML/JavaScript**.  
 Users can input data through a web form, and the ML model makes predictions in real-time.
