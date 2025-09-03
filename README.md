@@ -1,4 +1,4 @@
-# 🌱 AgroSense
+# 🌱 Crop Recommendation System
 
 A **machine learning-based web application** that recommends the most suitable crop for cultivation based on soil nutrients and environmental conditions. This system helps farmers and agricultural experts make data-driven decisions to improve productivity.
 
@@ -8,9 +8,12 @@ A **machine learning-based web application** that recommends the most suitable c
 
 This project utilizes the **Crop Recommendation Dataset** available on Kaggle, curated by Varshita Nalluri:
 
-- **Dataset Name**: Crop Recommendation Dataset  
-- **Source**: Kaggle  
-- **URL**: https://www.kaggle.com/datasets/varshitanalluri/crop-recommendation-dataset  
+## 📊 Dataset  
+
+Dataset: [**Crop Recommendation Dataset**](https://www.kaggle.com/datasets/varshitanalluri/crop-recommendation-dataset)  
+
+- **Description**: The dataset contains records of seven key environmental and soil features—Nitrogen (N), Phosphorus (P), Potassium (K), Temperature, Humidity, pH Value, and Rainfall—paired with the most suitable crop for given conditions.
+
 - **Description**: The dataset contains records of seven key environmental and soil features—Nitrogen (N), Phosphorus (P), Potassium (K), Temperature, Humidity, pH Value, and Rainfall—paired with the most suitable crop for given conditions :contentReference[oaicite:0]{index=0}.
 
 ---
